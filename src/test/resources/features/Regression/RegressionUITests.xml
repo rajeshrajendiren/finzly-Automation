@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Legal Entity Creation Test Suite - UI Tests" parallel="none">
+
+ 	<test name="Cost center" preserve-order="true" >
+		<!--<parameter name="cucumber.filter.tags" value="${tag} and @UI and @Regression" />-->
+		<parameter name="cucumber.plugin" value="json:target/CostCenterOperationTests.json,pretty,html:target/CostCenterOperationTests.html" />
+		<parameter name="cucumber.features" value="src/test/resources/features/Regression/LegalEntity/CostCenterOperations.feature"/>
+	<!--	<parameter name="cucumber.features" value="src/test/resources/features/Regression/IncomingPayments/Fedwire_IncomingPayment_Return.feature"/>
+		<parameter name="cucumber.features" value="src/test/resources/features/Regression/BlockPaymentRules/ACH_Block_IncomingPayment.feature"/>
+		<parameter name="cucumber.features" value="src/test/resources/features/Regression/IncomingPayments/Fedwire_IncomingPayment_Credit.feature"/>-->
+		
+	     <parameter name="cucumber.glue" value="com.fxoffice.stepDefinitions"/>
+    	<classes>
+      		<class name="com.fxoffice.runners.UITestRunner"/>
+    	</classes>
+    	
+ 	</test>
+
+</suite>

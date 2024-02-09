@@ -1,0 +1,23 @@
+{
+   "QA3" : {
+     "URL" 		: "https://qa3.finzly.net/fxoffice/login",
+	 "username" : "Rajesh1",
+	 "password" : "Rajesh@123",
+	 "approverusername" : "Rajesh2",
+	 "approverpassword" : "Rajesh@789"
+   },
+    "UAT" : {
+     "URL" 		: "https://uat1.swapstech.net/fxoffice/login",
+	 "username" : "Rajesh1",
+	 "password" : "Raj@12345",
+	 "approverusername" : "Rajesh2",
+	 "approverpassword" : "Rajesh@789"
+   },
+    "BOSS_UAT" : {
+     "URL" 		: "https://uat1.swapstech.net/bossPortal/",
+	 "username" : "Raj1",
+	 "password" : "Raj!12345"
+	
+   }
+   
+}
